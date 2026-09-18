@@ -17,28 +17,45 @@
 <body class="bg-slate-50 text-slate-800 min-h-screen flex flex-col">
 
   <!-- Navbar / Header -->
+  <!-- Navbar / Header -->
   <header class="bg-blue-600 text-white shadow-md">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex flex-col sm:flex-row items-center justify-between py-3 sm:py-0 gap-3">
+      
+      <!-- Logo & Judul -->
       <div class="flex items-center space-x-3">
         <div class="bg-white/10 p-2 rounded-lg">
           <i data-lucide="book-open-check" class="w-6 h-6"></i>
         </div>
         <div>
-          <h1 class="font-bold text-lg leading-tight">Buku Tamu Kelurahan</h1>
+          <h1 class="font-bold text-lg leading-tight">Buku Tamu Kelurahan Pager</h1>
           <p class="text-xs text-blue-100">Sistem Pelayanan Administrasi Terpadu</p>
         </div>
       </div>
-      <!-- Nav Tabs -->
-      <nav class="flex space-x-2">
-        <button onclick="switchTab('dashboard')" id="nav-dashboard" class="px-3 py-2 rounded-lg text-sm font-medium bg-blue-700 text-white transition flex items-center space-x-1.5">
-          <i data-lucide="layout-dashboard" class="w-4 h-4"></i>
-          <span>Dashboard</span>
-        </button>
-        <button onclick="switchTab('input')" id="nav-input" class="px-3 py-2 rounded-lg text-sm font-medium hover:bg-blue-700 text-blue-100 transition flex items-center space-x-1.5">
-          <i data-lucide="user-plus" class="w-4 h-4"></i>
-          <span>Isi Buku Tamu</span>
-        </button>
-      </nav>
+
+      <!-- Navigasi Tab & Tombol Kembali -->
+      <div class="flex items-center space-x-3">
+        <!-- Nav Tabs -->
+        <nav class="flex space-x-2">
+          <button onclick="switchTab('dashboard')" id="nav-dashboard" class="px-3 py-2 rounded-lg text-sm font-medium bg-blue-700 text-white transition flex items-center space-x-1.5">
+            <i data-lucide="layout-dashboard" class="w-4 h-4"></i>
+            <span>Dashboard</span>
+          </button>
+          <button onclick="switchTab('input')" id="nav-input" class="px-3 py-2 rounded-lg text-sm font-medium hover:bg-blue-700 text-blue-100 transition flex items-center space-x-1.5">
+            <i data-lucide="user-plus" class="w-4 h-4"></i>
+            <span>Isi Buku Tamu</span>
+          </button>
+        </nav>
+
+        <!-- Garis Pemisah Vertikal (Opsional agar rapi) -->
+        <div class="h-6 w-[1px] bg-blue-500 hidden sm:block"></div>
+
+        <!-- Tombol Kembali ke Website Kelurahan -->
+        <a href="https://kel-pager.palangkaraya.go.id" class="bg-blue-600 hover:bg-blue-700 text-white font-semibold text-xs px-4 py-2.5 rounded-xl shadow-md shadow-blue-500/20 transition flex items-center gap-1.5">
+          <i data-lucide="arrow-left" class="w-4 h-4"></i>
+          <span>Kembali ke Website</span>
+        </a>
+      </div>
+
     </div>
   </header>
 
@@ -193,7 +210,7 @@
   <!-- Footer -->
   <footer class="bg-white border-t border-slate-200 py-4 mt-auto">
     <div class="max-w-7xl mx-auto px-4 text-center text-xs text-slate-500">
-      &copy; 2026 Kantor Kelurahan. Sistem Pelayanan Terpadu Berbasis Digital.
+      &copy; 2026 Penata Kelola Sistem dan Teknologi Informasi Kelurahan Pager . Memet Hariyadi Christian,S.T
     </div>
   </footer>
 
